@@ -24,9 +24,23 @@ const Dashboard = () => {
             <User />
           </div>
         </div>
-        <div className='py-5 text-xl font-semibold mb-4 text-gray-600'>
+        <div className='py-5 text-xl font-semibold mb-2 text-gray-600'>
           <button onClick={() => signOut()}>Sign Out</button>
         </div>
+        <div className='flex flex-row'>
+        <p className="mt-10 text-center text-sm text-gray-500 pr-8">
+              Login Again {' '}
+              <a href="/Login" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+                Login
+              </a>
+            </p>
+        <p className="mt-10 text-center text-sm text-gray-500">
+              Register {' '}
+              <a href="/register" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+                Register
+              </a>
+            </p>
+            </div>
       </div>
     </section>
   )
